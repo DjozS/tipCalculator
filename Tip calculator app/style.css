@@ -1,0 +1,199 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background:hsl(185, 41%, 84%);
+    font-family: "Space Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;  
+}
+header{
+    margin-top:40px;
+}
+main{
+    display: flex;
+    background:white;
+    border-radius: 10px;
+    padding:20px;
+    width:570px;
+    justify-content: space-evenly;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+.container1{
+   display: flex;
+   flex-direction: column;
+   width:250px;
+   text-align: left
+}
+.container2{
+    background: hsl(183, 100%, 15%);
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    color:rgb(181, 182, 182);
+    width:250px;
+    align-items: center;
+}
+.subCont2{
+    display: flex;
+    justify-content: space-between;
+    width:200px;
+    align-items: center;
+    margin-top:20px;
+}
+.desc{
+    display: flex;
+    flex-direction: column;
+    text-align: left
+}
+h1,h2{
+    color:hsl(183, 100%, 15%);;
+}
+h1{
+    font-size:22px;
+}
+h2{
+    font-size: 12px;
+}
+p{
+    font-size:10px;
+}
+.whiteH2{
+    color:white
+}
+.number{
+    color:hsl(172, 67%, 45%);
+    font-family: "Space Mono", monospace;
+    font-weight: 700;
+    font-size:28px;
+}
+input{
+    border:none;
+    outline:none;
+    background:hsl(189, 41%, 97%);
+    border-radius:5px;
+    color:gray;
+    margin-bottom:20px;
+    padding:5px 7px;
+    width:240px;
+    margin-top:5px;
+    height:28px;
+    font-family: "Space Mono", monospace;
+    font-weight: 700;
+    font-style: normal;
+    position: relative;
+    cursor: pointer;
+    color:hsl(183, 100%, 15%);
+    text-align: end;
+}
+.buttons{
+    margin-bottom:20px;
+    margin-top:10px;
+}
+button{
+    border:none;
+    border-radius:5px;
+    background:hsl(183, 100%, 15%);
+    color:white;
+    width:70px;
+    height:30px;
+    font-family: "Space Mono", monospace;
+    font-weight: 700;
+    margin-bottom:10px;
+    cursor: pointer;
+}
+.customInput{
+    background:hsl(189, 41%, 97%);
+    color:hsl(184, 66%, 30%);
+    border:none;
+    border-radius:5px;
+    width:70px;
+    height:30px;
+    font-family: "Space Mono", monospace;
+    font-weight: 700;
+    margin-bottom:10px;
+    cursor: pointer;
+    padding-left: 10px;
+}
+.customInput::placeholder{
+    color:hsl(184, 33%, 29%);
+}
+.resetBtn{
+    background: hsl(186, 57%, 24%);
+    color:hsl(183, 100%, 15%);
+    width:200px;
+    margin-top:90px;
+}
+.dollar, .person{
+    position: absolute;
+    height:14px;
+    left:6%;
+    z-index: 1;
+}
+.dollar{
+    top:16%;
+}
+.person{
+    top:81%
+}
+input:hover{
+    border: 1px solid hsl(172, 67%, 45%);
+}
+button:hover{
+  background:hsl(185, 39%, 64%);
+  color:hsl(183, 100%, 15%);
+}
+button:focus{
+    color: hsl(183, 100%, 15%);
+    background: hsl(172, 67%, 45%);
+}
+.variableText{
+    display: flex;
+    justify-content: space-between;
+    width:240px;
+}
+.error{
+    color:red;
+    display: none;
+}
+@media(max-width:500px){
+  
+   main{
+    flex-direction: column;
+    width:300px;
+    align-items: center;
+    top:77%
+   }
+   .resetBtn{
+    margin-top:30px;
+   }
+   button{
+    width:120px;
+    height:40px;
+   }
+   .customInput{
+    width:120px;
+    height:40px;
+    font-size: 15px;
+    text-align: center;
+   }
+   input{
+    height:40px;
+   }
+   .dollar, .person{
+    left:12%;
+   }
+   .dollar{
+    top:9.5%;
+   }
+   .person{
+    top:56%
+   }
+
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tip calculator app</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <h1>SPLI</h1>
+            <h1>TTER</h1>
+        </header>
+        <main>
+            <div class="container1">
+                <h2>Bill</h2>
+                <img class="dollar" src="images/icon-dollar.svg">
+                <input class="billInput" placeholder="0" type="text">
+                <h2>Select Tip %</h2>
+                <div class="buttons">
+                    <button id="five">5%</button>
+                    <button id="ten">10%</button>
+                    <button id="fifteen">15%</button>
+                    <button id="twentyfive">25%</button>
+                    <button id="fifty">50%</button>
+                    <input class="customInput" placeholder="Custom" type="text">
+                </div>
+                <div class="variableText">
+                    <h2>Number of People</h2>
+                    <h2 class="error">Can't be zero</h2>
+                </div>
+                <img class="person" src="images/icon-person.svg">
+                <input class="numOfPpl" type="text" placeholder="0">
+            </div>
+            <div class="container2">
+                <div class="subCont2">
+                    <div class="desc">
+                        <h2 class="whiteH2">Tip Amount</h2>
+                        <p>/ person</p>
+                    </div>
+                    <h1 class="number" id="tipAmount">$0.00</h1>
+                </div>
+                <div class="subCont2">
+                    <div class="desc">
+                        <h2 class="whiteH2">Total</h2>
+                        <p>/ person</p>
+                    </div>
+                    <h1 class="number" id="total">$0.00</h1>
+                </div>
+                <button class="resetBtn">RESET</button>
+            </div>
+        </main> 
+        <script src="script.js"></script>
+    </body>
+</html>
